@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.first {
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.first .logo {
+    background: url('../images/logo.png');
+    height: 186px;
+    width: 251px;
+    margin: 0 auto;
+}
+
+.first .text {
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.first .text > img {
+    margin: 0 40px;
+    opacity: 0.3;
+    transition: margin 1s, opacity 4s;
+}
+
+.first .intro {
+    background: url("../images/info_1.png");
+    height: 49px;
+    width: 772px;
+    margin: 40px auto;
+}
+
+.first.current .text > img {
+    margin: 0 5px;
+    opacity: 1;
+}
+
+.second > .fp-tableCell {
+ position: relative;
+}
+
+.second .shield {
+    width: 440px;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%,-50%);
+}
+
+.second .info {
+    background: url("../images/info_2.png");
+    width: 635px;
+    height: 309px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(100%,-60%);
+
+}
+
+.shield > img {
+    transition: transform 1s;
+}
+
+.shield > img:nth-of-type(1) {
+    transform: translate(100px, 100px) rotate(30deg);
+}
+
+.shield > img:nth-of-type(2) {
+    transform: translate(200px, 200px) rotate(-30deg);
+}
+
+.shield > img:nth-of-type(3) {
+    transform: translate(100px, 100px) rotate(50deg);
+}
+
+.shield > img:nth-of-type(4) {
+    transform: translate(-100px, -100px) rotate(30deg);
+}
+
+.shield > img:nth-of-type(5) {
+    transform: translate(100px, 100px) rotate(330deg);
+}
+
+.shield > img:nth-of-type(6) {
+    transform: translate(-100px, 100px) rotate(310deg);
+}
+
+.shield > img:nth-of-type(7) {
+    transform: translate(100px, -100px) rotate(320deg);
+}
+
+.shield > img:nth-of-type(8) {
+    transform: translate(-100px, 100px) rotate(30deg);
+}
+
+.shield > img:nth-of-type(9) {
+    transform: translate(100px, -100px) rotate(130deg);
+}
+
+.second.current .shield > img {
+    transform: none;
+}
+
+.third {
+    position: relative;
+}
+
+.third .info {
+    background: url("../images/info_3.png");
+    width: 631px;
+    height: 278px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%,-50%);
+}
+
+.third .circle {
+    background: url("../images/circle.png");
+    width: 453px;
+    height: 449px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(120%,-50%);
+}
+.third .circle >.rocket{
+    background: url("../images/rocket.png");
+    width: 203px;
+    height: 204px;
+    position: absolute;
+    top: -600px;
+    left: 650px;
+    transition: left 2s,top 1s;
+}
+.third.current .circle >.rocket{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.fourth{
+    position: relative;
+}
+.fourth .search{
+    width: 529px;
+    height: 438px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-120%,-50%);
+    overflow: hidden;
+}
+.fourth .search >.searchbar{
+    background: url("../images/search.png");
+    width: 529px;
+    height: 66px;
+    transform: translateX(-100%);
+    transition: transform 1s;
+
+
+}
+.fourth.current .search >.searchbar{
+    transform: none;
+}
+.fourth .search >.searchtext{
+    background: url("../images/key.png");
+    width: 0px;
+    height: 22px;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+.fourth.current .search >.searchtext{
+    width: 99px;
+    transition: width 2s 1s steps(5);
+}
+.fourth .search >.searchresult{
+    background: url("../images/result.png");
+    width: 529px;
+    height: 0px;
+}
+.fourth.current .search >.searchresult{
+    height: 372px;
+    transition: height 2s 3s;
+}
+.fourth .info{
+    background: url("../images/info_4.png");
+    width: 612px;
+    height: 299px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(120%,-60%);
+}
+
+
+
+
+
+
+
+
+
+
+
